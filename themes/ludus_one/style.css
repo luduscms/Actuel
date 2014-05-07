@@ -1,0 +1,336 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+/* Polices personnalisées */
+@font-face
+{
+    font-family: 'ArchitectsDaughter';
+    src: url("data/Font_ArchitectsDaughter.ttf");
+}
+
+/* Zones */
+
+body
+{
+	background: white url("data/bg_main.png");
+	background-attachment: fixed;
+}
+
+div.main
+{
+	width: 800px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+
+/* Propriétés générales d'éléments */
+
+h1,
+h2,
+h3,
+p
+{
+	font-family: ArchitectsDaughter;
+}
+h1
+{
+	font-size: 48px;
+}
+h2
+{
+	font-size: 32px;
+}
+h3
+{
+	font-size: 16px;
+}
+
+a, a:active, a:hover, a:visited
+{
+	text-decoration: none;
+	color: #00A6D0;
+}
+a:hover
+{
+	color: #00B0DC;
+}
+a:active
+{
+	color: #006E8A;
+}
+
+form
+{
+	display: inline;
+}
+input[type=button],
+input[type=submit]
+{
+	display: inline;
+	padding: 1px;
+	margin-left: 3px;
+	font-family: ArchitectsDaughter;
+	background-color: transparent;
+	
+	background-image: url("data/bg_button.png");
+}
+textarea
+{
+	resize: none;
+}
+
+article
+{
+	border: 5px black solid;
+	border-radius: 8px;
+	
+	padding: 10px;
+	margin-bottom: 5px;
+	
+	text-align: center;
+	
+	background-image: url("data/bg_zone.png");
+}
+
+/* Header */
+article.header
+{
+	margin-top: 5px;
+	padding-bottom: 5px;
+}
+
+article.header h1
+{
+	font-size: 50px;
+	font-weight: normal;
+}
+
+article.header h1.styleTitre1:hover
+{
+	color: #00C3A9;
+}
+article.header h1.styleTitre2:hover
+{
+	color: #42D42C;
+}
+article.header h1.styleTitre3:hover
+{
+	color : #BADF01;
+}
+
+article.header a, a:hover
+{
+	color: #000000;
+}
+
+/* Footer */
+article.footer
+{
+	height: 20px;
+}
+
+article.footer div.version
+{
+	float: left;
+	text-align: left;
+}
+article.footer div.credits
+{
+	float: right;
+	text-align: right;
+}
+
+article.footer h3
+{
+	font-size: 12px;
+}
+
+/* Barre utilisateur */
+article.panelUtilisateur
+{
+	background-image: url("data/bg_user.png");
+	padding: 2px 0;
+}
+article.panelUtilisateur h3.profil
+{
+	font-size: 16px;
+	display: inline;
+}
+
+/* Utilisateur */
+article.userInfo table
+{
+	width: 775px;
+	border-spacing: 0;
+}
+
+article.userInfo td.avatar
+{
+	width: 132px;
+	text-align: left;
+	vertical-align: top;
+}
+article.userInfo td.avatar img
+{
+	width: 128px;
+	height: 128px;
+	border: 5px solid black;
+	border-radius: 20px;
+}
+
+article.userInfo td.pseudo
+{
+	text-align: left;
+	vertical-align: top;
+	border-bottom: 5px solid black;
+	padding-top: 2px;
+	padding-bottom: 2px;
+}
+article.userInfo td.pseudo h2
+{
+	line-height: 32px;
+}
+
+article.userInfo td.grade
+{
+	text-align: right;
+	vertical-align: bottom;
+	border-bottom: 5px solid black;
+	padding-top: 2px;
+}
+article.userInfo td.grade h3
+{
+	font-size: 24px;
+}
+
+article.userInfo td.bio
+{
+	text-align: left;
+	text-indent: 10px;
+	vertical-align: top;
+	padding-left: 4px;
+}
+
+/* Vidéo */
+article.video div.enTeteVideo
+{
+	width: 750px;
+	margin-left: auto;
+	margin-right: auto;
+}
+article.video td.titreVideo
+{
+	width: 90%;
+	text-align: left;
+}
+article.video td.infosVideo
+{	
+	text-align: right;
+	vertical-align: top;
+}
+article.video div.description
+{
+	font-size: 16px;
+	text-align: left;
+	
+	margin-left: 5px;
+	margin-right: 5px;
+}
+
+article.video h2.titreVideo
+{
+	line-height: 38px;
+	margin-bottom: 10px;
+}
+article.video h2.infosVideo
+{
+	font-size: 16px;
+	line-height: 23px;
+	text-align: right;
+}
+article.video p.publieeLe
+{
+	text-align: center;
+	font-weight: bold;
+	font-size: 18px;
+	display: inline;
+}
+article.video div.description p
+{
+	font-family: ArchitectsDaughter;
+	text-indent: 1em;
+}
+article.video img.miniatureVideo,
+article.video div.lecteurVideo
+{
+	width: 748px;
+	height: 421px;
+	
+	border: 6px black solid;
+	border-radius: 6px;
+}
+
+/* Commentaire */
+table.commentaire
+{
+	width: 100%;
+	border: 5px black solid;
+	border-radius: 8px;
+	background-image: url('data/bg_zone.png');
+	margin-bottom: 5px;
+	border-spacing: 0px;
+}
+table.commentaire td.infosUtilisateur
+{
+	padding: 5px;
+	text-align: center;
+	vertical-align: top;
+}
+table.commentaire td.infosUtilisateur img
+{
+	width: 80px;
+	height: auto;
+	border: 5px solid black;
+	border-radius: 20px;
+}
+
+table.commentaire td.commentaire
+{
+	border-left: 5px black solid;
+	padding: 5px;
+	vertical-align: top;
+	text-align: left;
+}
+table.commentaire td.commentaire p
+{
+	word-wrap: break-word;
+}
+
+table.commentaire td.moderateur
+{
+	border-left: 5px black solid;
+	padding: 2px;
+	vertical-align: bottom;
+	text-align: right;
+}
+table.commentaire td.moderateur p
+{
+	font-size: 12px;
+}
+
+/* Pages */
+/* article.pages */
+
+/* 404 */
+article.notFound h2
+{
+	font-size: 28px;
+}
+article.notFound h3
+{
+	font-size: 20px;
+}

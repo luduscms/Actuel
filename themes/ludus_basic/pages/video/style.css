@@ -1,0 +1,150 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+/* Polices personnalisées */
+@font-face
+{
+    font-family: 'ArchitectsDaughter';
+    src: url("data/Font_ArchitectsDaughter.ttf");
+}
+
+/* Zones */
+body
+{
+	background-image: url("data/bg_main.png");
+}
+
+article
+{
+	border: 5px black solid;
+	border-radius: 8px;
+	
+	padding: 10px;
+	
+	text-align: center;
+	
+	background-image: url("data/bg_zone.png");
+}
+article.menu,
+article.menuC1,
+article.menuC2,
+article.menuCPW,
+article.menuEU
+{
+	width: 300px;
+	height: 220px;
+	
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	margin: auto auto;
+}
+article.menuC1
+{
+	width: 300px;
+	height: 200px;
+}
+article.menuC2
+{
+	width: 300px;
+	height: 310px;
+}
+article.menuCPW
+{
+	width: 570px;
+	height: 280px;
+}
+article.menuEU
+{
+	width: 380px;
+	height: 200px;
+}
+article.general
+{
+	width: 800px;
+	margin-top : 10px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+table
+{
+	border: 5px solid black;
+	border-spacing: 0;
+	border-radius: 10px;
+	
+	margin-left: auto;
+	margin-right: auto;
+}
+td
+{
+	border: 3px solid black;
+	padding: 5px;
+}
+
+
+/* Propriétés particulières */
+
+h1,
+h2,
+h3,
+p
+{
+	font-family: ArchitectsDaughter;
+}
+
+h1
+{
+	font-size: 32px;
+}
+
+h2
+{
+	font-size: 20px;
+}
+
+p
+{
+	font-size: 16px;
+	font-weight: normal;
+	display: inline;
+}
+
+form
+{
+	display: inline;
+}
+
+input[type=submit],
+input[type=button],
+input[type=text],
+input[type=password],
+textarea,
+select
+{
+	font-family: Courier New;
+	
+	display: inline;
+	padding: 5px;
+	
+	background-image: url("data/bg_button.png");
+}
+textarea
+{
+	resize: none;
+}
+
+input[type=submit],
+input[type=button]
+{
+	display: inline;
+	
+	margin-left: 3px;
+	margin-top: 4px;
+	font-family: ArchitectsDaughter;
+}
